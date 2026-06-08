@@ -1,0 +1,299 @@
+{
+  "dbu_per_micron": 1000.0,
+  "note": "Pin lists and LEF/LIB views are placeholders because source GDS has no pin labels.",
+  "cells": [
+    {
+      "name": "nfet_W20p825_L5",
+      "gds_archive": "nfets.zip",
+      "gds_member": "nfet_W20p825_L5.gds",
+      "bbox_dbu": [
+        70,
+        5,
+        77040,
+        151640
+      ],
+      "size_um": [
+        76.97,
+        151.635
+      ],
+      "ports": [
+        {
+          "name": "D",
+          "direction": "INOUT",
+          "side": "right",
+          "use": "SIGNAL"
+        },
+        {
+          "name": "G",
+          "direction": "INPUT",
+          "side": "top",
+          "use": "SIGNAL"
+        },
+        {
+          "name": "S",
+          "direction": "INOUT",
+          "side": "left",
+          "use": "SIGNAL"
+        },
+        {
+          "name": "VSS",
+          "direction": "INOUT",
+          "side": "bottom",
+          "use": "GROUND"
+        }
+      ]
+    },
+    {
+      "name": "nfet_W24u_L5",
+      "gds_archive": "nfets.zip",
+      "gds_member": "nfet_W24u_L5.gds",
+      "bbox_dbu": [
+        455,
+        1070,
+        63220,
+        145155
+      ],
+      "size_um": [
+        62.765,
+        144.085
+      ],
+      "ports": [
+        {
+          "name": "D",
+          "direction": "INOUT",
+          "side": "right",
+          "use": "SIGNAL"
+        },
+        {
+          "name": "G",
+          "direction": "INPUT",
+          "side": "top",
+          "use": "SIGNAL"
+        },
+        {
+          "name": "S",
+          "direction": "INOUT",
+          "side": "left",
+          "use": "SIGNAL"
+        },
+        {
+          "name": "VSS",
+          "direction": "INOUT",
+          "side": "bottom",
+          "use": "GROUND"
+        }
+      ]
+    },
+    {
+      "name": "nfet_W6u_L5",
+      "gds_archive": "nfets.zip",
+      "gds_member": "nfet_W6u_L5.gds",
+      "bbox_dbu": [
+        560,
+        620,
+        59795,
+        118315
+      ],
+      "size_um": [
+        59.235,
+        117.695
+      ],
+      "ports": [
+        {
+          "name": "D",
+          "direction": "INOUT",
+          "side": "right",
+          "use": "SIGNAL"
+        },
+        {
+          "name": "G",
+          "direction": "INPUT",
+          "side": "top",
+          "use": "SIGNAL"
+        },
+        {
+          "name": "S",
+          "direction": "INOUT",
+          "side": "left",
+          "use": "SIGNAL"
+        },
+        {
+          "name": "VSS",
+          "direction": "INOUT",
+          "side": "bottom",
+          "use": "GROUND"
+        }
+      ]
+    },
+    {
+      "name": "INV_X4PC_T5_nmos",
+      "gds_archive": "INV_X4PC_T5.zip",
+      "gds_member": "INV_X4PC_T5_nmos.gds",
+      "bbox_dbu": [
+        -177990,
+        -52385,
+        2290175,
+        291765
+      ],
+      "size_um": [
+        2468.165,
+        344.15
+      ],
+      "ports": [
+        {
+          "name": "A",
+          "direction": "INPUT",
+          "side": "left",
+          "use": "SIGNAL"
+        },
+        {
+          "name": "Y",
+          "direction": "OUTPUT",
+          "side": "right",
+          "use": "SIGNAL"
+        },
+        {
+          "name": "VDD",
+          "direction": "INOUT",
+          "side": "top",
+          "use": "POWER"
+        },
+        {
+          "name": "VSS",
+          "direction": "INOUT",
+          "side": "bottom",
+          "use": "GROUND"
+        }
+      ]
+    },
+    {
+      "name": "wl_inv",
+      "gds_archive": "WL_Driver-Circuits.zip",
+      "gds_member": "wl_inv.gds",
+      "bbox_dbu": [
+        -15700,
+        13310,
+        2483755,
+        390875
+      ],
+      "size_um": [
+        2499.455,
+        377.565
+      ],
+      "ports": [
+        {
+          "name": "A",
+          "direction": "INPUT",
+          "side": "left",
+          "use": "SIGNAL"
+        },
+        {
+          "name": "Y",
+          "direction": "OUTPUT",
+          "side": "right",
+          "use": "SIGNAL"
+        },
+        {
+          "name": "VDD",
+          "direction": "INOUT",
+          "side": "top",
+          "use": "POWER"
+        },
+        {
+          "name": "VSS",
+          "direction": "INOUT",
+          "side": "bottom",
+          "use": "GROUND"
+        }
+      ]
+    },
+    {
+      "name": "wl_prebuffer",
+      "gds_archive": "WL_Driver-Circuits.zip",
+      "gds_member": "wl_prebuffer.gds",
+      "bbox_dbu": [
+        -2561195,
+        6300,
+        2496235,
+        421105
+      ],
+      "size_um": [
+        5057.43,
+        414.805
+      ],
+      "ports": [
+        {
+          "name": "A",
+          "direction": "INPUT",
+          "side": "left",
+          "use": "SIGNAL"
+        },
+        {
+          "name": "Y",
+          "direction": "OUTPUT",
+          "side": "right",
+          "use": "SIGNAL"
+        },
+        {
+          "name": "VDD",
+          "direction": "INOUT",
+          "side": "top",
+          "use": "POWER"
+        },
+        {
+          "name": "VSS",
+          "direction": "INOUT",
+          "side": "bottom",
+          "use": "GROUND"
+        }
+      ]
+    },
+    {
+      "name": "wl_sel",
+      "gds_archive": "WL_Driver-Circuits.zip",
+      "gds_member": "wl_sel.gds",
+      "bbox_dbu": [
+        90125,
+        399620,
+        1666140,
+        2956045
+      ],
+      "size_um": [
+        1576.015,
+        2556.425
+      ],
+      "ports": [
+        {
+          "name": "A",
+          "direction": "INPUT",
+          "side": "left",
+          "use": "SIGNAL"
+        },
+        {
+          "name": "SEL",
+          "direction": "INPUT",
+          "side": "left",
+          "use": "SIGNAL"
+        },
+        {
+          "name": "Y",
+          "direction": "OUTPUT",
+          "side": "right",
+          "use": "SIGNAL"
+        },
+        {
+          "name": "VDD",
+          "direction": "INOUT",
+          "side": "top",
+          "use": "POWER"
+        },
+        {
+          "name": "VSS",
+          "direction": "INOUT",
+          "side": "bottom",
+          "use": "GROUND"
+        }
+      ]
+    }
+  ]
+}

@@ -1,2 +1,25 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# EDA/source artifacts
+*.zip binary
+*.gds binary
+*.calibre.db binary
+*.lef text eol=lf
+*.tlef text eol=lf
+*.lib text eol=lf
+*.v text eol=lf
+*.tcl text eol=lf
+*.cfg text eol=lf
+*.map text eol=lf
+*.layermap text eol=lf
+*.lyt text eol=lf
+*.lyp text eol=lf
+*.cdl text eol=lf
+*.spice text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+qrcTechFile text eol=lf

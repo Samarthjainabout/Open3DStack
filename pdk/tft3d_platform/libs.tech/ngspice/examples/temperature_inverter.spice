@@ -1,0 +1,27 @@
+* Temperature-style inverter comparison using cold/nominal/hot model variants.
+VDD vdd 0 1.5
+VIN in 0 PULSE(0 1.5 1u 50n 50n 2u 4u)
+
+.model nch_cold nmos level=1 vto=0.60 kp=70u gamma=0.0 lambda=0.018 cgso=1p cgdo=1p
+.model nch_nom  nmos level=1 vto=0.55 kp=60u gamma=0.0 lambda=0.020 cgso=1p cgdo=1p
+.model nch_hot  nmos level=1 vto=0.50 kp=48u gamma=0.0 lambda=0.025 cgso=1p cgdo=1p
+
+RPU_C vdd y_cold 22k
+M_C y_cold in 0 0 nch_cold W=24u L=5u M=1
+C_C y_cold 0 20f
+
+RPU_N vdd y_nom 24k
+M_N y_nom in 0 0 nch_nom W=24u L=5u M=1
+C_N y_nom 0 20f
+
+RPU_H vdd y_hot 28k
+M_H y_hot in 0 0 nch_hot W=24u L=5u M=1
+C_H y_hot 0 20f
+
+.tran 20n 12u
+.control
+run
+wrdata pdk/tft3d_platform/libs.tech/ngspice/examples/temperature_inverter.dat v(in) v(y_cold) v(y_nom) v(y_hot)
+quit
+.endc
+.end

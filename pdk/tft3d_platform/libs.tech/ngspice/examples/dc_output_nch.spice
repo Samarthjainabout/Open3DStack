@@ -1,0 +1,15 @@
+* DC output sweep for the neutral 3D_TFT n-channel primitive.
+.include pdk/tft3d_platform/libs.tech/ngspice/tft3d_platform_primitives.spice
+
+Vd d 0 0
+Vg g 0 0
+Vs s 0 0
+M0 d g s 0 nch W=20u L=5u
+
+.dc Vd 0 3.0 0.1 Vg 0 3.0 1.0
+.control
+run
+wrdata pdk/tft3d_platform/libs.tech/ngspice/examples/dc_output_nch.dat v(d) v(g) i(vd)
+quit
+.endc
+.end

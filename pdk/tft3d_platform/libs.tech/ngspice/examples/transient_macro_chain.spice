@@ -1,0 +1,19 @@
+* Transient switching check for the imported 3D_TFT macro chain.
+.include pdk/tft3d_platform/libs.tech/ngspice/tft3d_platform_primitives.spice
+.include openlane_import/spice/3d_tft_macros.spice
+
+VDD vdd 0 1.5
+VA a 0 PULSE(0 1.5 1u 50n 50n 2u 4u)
+VSEL sel 0 PULSE(0 1.5 0.5u 50n 50n 4u 8u)
+XINV a inv_y vdd 0 wl_inv
+XPRE inv_y pre_y vdd 0 wl_prebuffer
+XSEL pre_y sel y vdd 0 wl_sel
+CLOAD y 0 20f
+
+.tran 20n 16u
+.control
+run
+wrdata pdk/tft3d_platform/libs.tech/ngspice/examples/transient_macro_chain.dat v(a) v(sel) v(y)
+quit
+.endc
+.end

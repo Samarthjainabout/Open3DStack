@@ -1,0 +1,15 @@
+* AC response and thermal-noise reference check for a basic resistor path.
+.include pdk/tft3d_platform/libs.tech/ngspice/tft3d_platform_primitives.spice
+
+Vin in 0 DC 0 AC 1
+R1 in out 100k
+RLOAD out 0 100k
+
+.control
+ac dec 20 1 1Meg
+let out_mag = mag(v(out))
+let thermal_noise_v_per_rtHz = frequency / frequency * sqrt(4 * 1.380649e-23 * 300 * 100000)
+wrdata pdk/tft3d_platform/libs.tech/ngspice/examples/ac_noise_resistor.dat frequency out_mag thermal_noise_v_per_rtHz
+quit
+.endc
+.end

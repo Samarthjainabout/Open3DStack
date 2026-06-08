@@ -1,0 +1,16 @@
+# OpenLane run products
+openlane/**/runs/
+openlane/**/tmp/
+openlane/**/logs/
+openlane/**/reports/
+openlane/**/results/
+
+# Python/tool caches
+__pycache__/
+*.pyc
+.DS_Store
+
+# Simulation run products
+*.dat
+*.raw
+*.log

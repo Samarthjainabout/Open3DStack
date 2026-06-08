@@ -1,0 +1,38 @@
+* Basic SPICE placeholders for the imported 3D_TFT hard macros.
+* Include pdk/tft3d_platform/libs.tech/ngspice/tft3d_platform_primitives.spice
+* or pdk/tft3d_platform/libs.tech/ngspice/tft3d_platform.spice before this file.
+* These models are for flow bring-up and functional checks only.
+
+.subckt nfet_W20p825_L5 D G S VSS
+M0 D G S VSS nch W=20.825u L=5u M=1
+.ends nfet_W20p825_L5
+
+.subckt nfet_W24u_L5 D G S VSS
+M0 D G S VSS nch W=24u L=5u M=1
+.ends nfet_W24u_L5
+
+.subckt nfet_W6u_L5 D G S VSS
+M0 D G S VSS nch W=6u L=5u M=1
+.ends nfet_W6u_L5
+
+.subckt INV_X4PC_T5_nmos A Y VDD VSS
+RPU VDD Y 24k
+M0 Y A VSS VSS nch W=24u L=5u M=4
+COUT Y VSS 10f
+.ends INV_X4PC_T5_nmos
+
+.subckt wl_inv A Y VDD VSS
+XINV A Y VDD VSS INV_X4PC_T5_nmos
+.ends wl_inv
+
+.subckt wl_prebuffer A Y VDD VSS
+XINV0 A mid VDD VSS INV_X4PC_T5_nmos
+XINV1 mid Y VDD VSS INV_X4PC_T5_nmos
+.ends wl_prebuffer
+
+.subckt wl_sel A SEL Y VDD VSS
+RPU VDD Y 24k
+MSEL Y SEL mid VSS nch W=6u L=5u M=1
+MDAT mid A VSS VSS nch W=6u L=5u M=1
+COUT Y VSS 10f
+.ends wl_sel

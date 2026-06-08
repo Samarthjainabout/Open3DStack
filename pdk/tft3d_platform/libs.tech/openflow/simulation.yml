@@ -1,0 +1,43 @@
+# Neutral simulation manifest for flow automation.
+# Paths are relative to the repository root.
+
+spice_tool: ngspice
+verilog_tool: iverilog
+
+spice_decks:
+  dc_transfer:
+    tool: ngspice
+    deck: pdk/tft3d_platform/libs.tech/ngspice/examples/dc_transfer_nch.spice
+    output: pdk/tft3d_platform/libs.tech/ngspice/examples/dc_transfer_nch.dat
+  dc_output:
+    tool: ngspice
+    deck: pdk/tft3d_platform/libs.tech/ngspice/examples/dc_output_nch.spice
+    output: pdk/tft3d_platform/libs.tech/ngspice/examples/dc_output_nch.dat
+  transient:
+    tool: ngspice
+    deck: pdk/tft3d_platform/libs.tech/ngspice/examples/transient_macro_chain.spice
+    output: pdk/tft3d_platform/libs.tech/ngspice/examples/transient_macro_chain.dat
+  ac_noise:
+    tool: ngspice
+    deck: pdk/tft3d_platform/libs.tech/ngspice/examples/ac_noise_resistor.spice
+    output: pdk/tft3d_platform/libs.tech/ngspice/examples/ac_noise_resistor.dat
+  corners:
+    tool: ngspice
+    deck: pdk/tft3d_platform/libs.tech/ngspice/examples/corners_inverter.spice
+    output: pdk/tft3d_platform/libs.tech/ngspice/examples/corners_inverter.dat
+  temperature:
+    tool: ngspice
+    deck: pdk/tft3d_platform/libs.tech/ngspice/examples/temperature_inverter.spice
+    output: pdk/tft3d_platform/libs.tech/ngspice/examples/temperature_inverter.dat
+  monte_carlo:
+    tool: ngspice
+    deck: pdk/tft3d_platform/libs.tech/ngspice/examples/monte_carlo_inverter.spice
+    output: pdk/tft3d_platform/libs.tech/ngspice/examples/monte_carlo_inverter.dat
+
+verilog_sims:
+  macro_layout_functional:
+    tool: iverilog
+    sources:
+      - openlane/tft3d_macro_layout/src/tft3d_macro_layout.v
+      - openlane_import/sim/3d_tft_macro_functional.v
+      - openlane/tft3d_macro_layout/sim/tft3d_macro_layout_tb.v

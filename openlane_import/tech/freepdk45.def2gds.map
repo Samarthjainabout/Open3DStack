@@ -1,0 +1,35 @@
+# FreePDK45-style OpenLane/KLayout DEF-to-GDS layer map.
+# Format: lefdef_layer lefdef_purposes gds_layer gds_datatype
+#
+# Retained for OpenLane/KLayout stream-out using FreePDK45-numbered layers
+# to stream DEF/routed shapes
+# to the same GDS layer numbers as the source FreePDK45-origin macros.
+
+nwell    LEFPIN,PIN,LEFOBS             1   0
+pwell    LEFPIN,PIN,LEFOBS             2   0
+active   LEFPIN,PIN,LEFOBS             3   0
+poly     LEFPIN,NET,SPNET,PIN,VIA,LEFOBS 4   0
+contact  VIA,LEFPIN,PIN                7   0
+li1      LEFPIN,NET,SPNET,PIN,VIA,LEFOBS 8   0
+mcon     VIA,LEFPIN,PIN                7   0
+met1     LEFPIN,NET,SPNET,PIN,VIA      8   0
+met1     LEFOBS                        8   0
+via      VIA,LEFPIN,PIN                9   0
+met2     LEFPIN,NET,SPNET,PIN,VIA      10  0
+met2     LEFOBS                        10  0
+via2     VIA,LEFPIN,PIN                11  0
+met3     LEFPIN,NET,SPNET,PIN,VIA      12  0
+met3     LEFOBS                        12  0
+via3     VIA,LEFPIN,PIN                13  0
+met4     LEFPIN,NET,SPNET,PIN,VIA      14  0
+met4     LEFOBS                        14  0
+via4     VIA,LEFPIN,PIN                15  0
+met5     LEFPIN,NET,SPNET,PIN,VIA      16  0
+met5     LEFOBS                        16  0
+DIEAREA  ALL                           29  0
+
+NAME    met1/LABEL,met1/LEFPIN       8   0
+NAME    met2/LABEL,met2/LEFPIN       10  0
+NAME    met3/LABEL,met3/LEFPIN       12  0
+NAME    met4/LABEL,met4/LEFPIN       14  0
+NAME    met5/LABEL,met5/LEFPIN       16  0

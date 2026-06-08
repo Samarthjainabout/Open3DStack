@@ -1,0 +1,176 @@
+library (3d_tft_placeholders) {
+  delay_model : table_lookup;
+  time_unit : "1ns";
+  voltage_unit : "1V";
+  current_unit : "1mA";
+  pulling_resistance_unit : "1kohm";
+  leakage_power_unit : "1nW";
+  capacitive_load_unit (1, pf);
+  nom_process : 1.000;
+  nom_temperature : 25.000;
+  nom_voltage : 1.800;
+  input_threshold_pct_rise : 50.000;
+  input_threshold_pct_fall : 50.000;
+  output_threshold_pct_rise : 50.000;
+  output_threshold_pct_fall : 50.000;
+  slew_lower_threshold_pct_rise : 20.000;
+  slew_lower_threshold_pct_fall : 20.000;
+  slew_upper_threshold_pct_rise : 80.000;
+  slew_upper_threshold_pct_fall : 80.000;
+
+  cell (nfet_W20p825_L5) {
+    dont_touch : true;
+    area : 11671.346;
+    pin (D) {
+      direction : inout;
+      capacitance : 0.010;
+    }
+    pin (G) {
+      direction : input;
+      capacitance : 0.010;
+    }
+    pin (S) {
+      direction : inout;
+      capacitance : 0.010;
+    }
+    pg_pin (VSS) {
+      pg_type : primary_ground;
+      voltage_name : "VSS";
+    }
+  }
+
+  cell (nfet_W24u_L5) {
+    dont_touch : true;
+    area : 9043.495;
+    pin (D) {
+      direction : inout;
+      capacitance : 0.010;
+    }
+    pin (G) {
+      direction : input;
+      capacitance : 0.010;
+    }
+    pin (S) {
+      direction : inout;
+      capacitance : 0.010;
+    }
+    pg_pin (VSS) {
+      pg_type : primary_ground;
+      voltage_name : "VSS";
+    }
+  }
+
+  cell (nfet_W6u_L5) {
+    dont_touch : true;
+    area : 6971.663;
+    pin (D) {
+      direction : inout;
+      capacitance : 0.010;
+    }
+    pin (G) {
+      direction : input;
+      capacitance : 0.010;
+    }
+    pin (S) {
+      direction : inout;
+      capacitance : 0.010;
+    }
+    pg_pin (VSS) {
+      pg_type : primary_ground;
+      voltage_name : "VSS";
+    }
+  }
+
+  cell (INV_X4PC_T5_nmos) {
+    dont_touch : true;
+    area : 849418.985;
+    pin (A) {
+      direction : input;
+      capacitance : 0.010;
+    }
+    pin (Y) {
+      direction : output;
+      function : "!A";
+      max_capacitance : 1.000;
+    }
+    pg_pin (VDD) {
+      pg_type : primary_power;
+      voltage_name : "VDD";
+    }
+    pg_pin (VSS) {
+      pg_type : primary_ground;
+      voltage_name : "VSS";
+    }
+  }
+
+  cell (wl_inv) {
+    dont_touch : true;
+    area : 943706.727;
+    pin (A) {
+      direction : input;
+      capacitance : 0.010;
+    }
+    pin (Y) {
+      direction : output;
+      function : "!A";
+      max_capacitance : 1.000;
+    }
+    pg_pin (VDD) {
+      pg_type : primary_power;
+      voltage_name : "VDD";
+    }
+    pg_pin (VSS) {
+      pg_type : primary_ground;
+      voltage_name : "VSS";
+    }
+  }
+
+  cell (wl_prebuffer) {
+    dont_touch : true;
+    area : 2097847.251;
+    pin (A) {
+      direction : input;
+      capacitance : 0.010;
+    }
+    pin (Y) {
+      direction : output;
+      function : "A";
+      max_capacitance : 1.000;
+    }
+    pg_pin (VDD) {
+      pg_type : primary_power;
+      voltage_name : "VDD";
+    }
+    pg_pin (VSS) {
+      pg_type : primary_ground;
+      voltage_name : "VSS";
+    }
+  }
+
+  cell (wl_sel) {
+    dont_touch : true;
+    area : 4028964.146;
+    pin (A) {
+      direction : input;
+      capacitance : 0.010;
+    }
+    pin (SEL) {
+      direction : input;
+      capacitance : 0.010;
+    }
+    pin (Y) {
+      direction : output;
+      function : "A & SEL";
+      max_capacitance : 1.000;
+    }
+    pg_pin (VDD) {
+      pg_type : primary_power;
+      voltage_name : "VDD";
+    }
+    pg_pin (VSS) {
+      pg_type : primary_ground;
+      voltage_name : "VSS";
+    }
+  }
+
+}

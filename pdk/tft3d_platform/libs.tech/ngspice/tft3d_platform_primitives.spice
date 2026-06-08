@@ -1,0 +1,6 @@
+* Basic primitive models for the neutral 3D_TFT platform.
+* These compact models are for simulator bring-up, not signoff correlation.
+
+.param tft3d_vdd_nom=1.5
+.model nch nmos level=1 vto=0.55 kp=60u gamma=0.0 lambda=0.02 cgso=1p cgdo=1p
+.model resmod r rsh=1k

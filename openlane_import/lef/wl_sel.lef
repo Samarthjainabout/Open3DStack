@@ -1,0 +1,58 @@
+VERSION 5.8 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+UNITS
+  DATABASE MICRONS 1000 ;
+END UNITS
+MACRO wl_sel
+  CLASS BLOCK ;
+  ORIGIN 0 0 ;
+  FOREIGN wl_sel 0 0 ;
+  SIZE 1576.015 BY 2556.425 ;
+  SYMMETRY X Y ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 849.64 5 854.64 ;
+    END
+  END A
+  PIN SEL
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 1701.785 5 1706.785 ;
+    END
+  END SEL
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1571.015 1275.71 1576.015 1280.71 ;
+    END
+  END Y
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met1 ;
+        RECT 785.51 2551.425 790.51 2556.425 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met1 ;
+        RECT 785.51 0 790.51 5 ;
+    END
+  END VSS
+  OBS
+    LAYER met1 ;
+      RECT 0 0 1576.015 2556.425 ;
+  END
+END wl_sel
+END LIBRARY

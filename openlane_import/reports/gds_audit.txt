@@ -1,0 +1,60 @@
+# 3D_TFT GDS Audit Summary
+
+Generated from the source GDS audit used to build the placeholder OpenLane views.
+The source GDS cells contain no text labels, so pin placement is not extracted.
+
+## nfet_W20p825_L5.gds
+- top_cell: nfet_W20p825_L5
+- bbox_dbu: [70, 5, 77040, 151640]
+- size_um: 76.97 x 151.635
+- layers: 8:metal1=6, 10:metal2=4, 3:active=1
+- refs: M2_M1_CDNS_780394886540 x2, pcont_CDNS_780394886540 x1
+- text_labels: 0
+
+## nfet_W24u_L5.gds
+- top_cell: nfet_W24u_L5
+- bbox_dbu: [455, 1070, 63220, 145155]
+- size_um: 62.765 x 144.085
+- layers: 8:metal1=8, 10:metal2=6, 3:active=1
+- refs: M2_M1_CDNS_780396581750 x2, pcont_CDNS_780396581750 x1
+- text_labels: 0
+
+## nfet_W6u_L5.gds
+- top_cell: nfet_W6u_L5
+- bbox_dbu: [560, 620, 59795, 118315]
+- size_um: 59.235 x 117.695
+- layers: 8:metal1=8, 10:metal2=6, 3:active=1
+- refs: pcont_CDNS_780397424700 x1
+- text_labels: 0
+
+## INV_X4PC_T5_nmos.gds
+- top_cell: INV_X4PC_T5_nmos
+- bbox_dbu: [-177990, -52385, 2290175, 291765]
+- size_um: 2468.165 x 344.15
+- layers: 8:metal1=88, 10:metal2=66
+- refs: M2_M1_CDNS_780397735540 x29, nfet_W20p825_L5 x20, M2_M1_via x17, nfet_W24u_L5 x1
+- text_labels: 0
+
+## wl_inv.gds
+- top_cell: wl_inv
+- bbox_dbu: [-15700, 13310, 2483755, 390875]
+- size_um: 2499.455 x 377.565
+- layers: 10:metal2=4, 8:metal1=4
+- refs: INV_X4PC_T5_nmos x1
+- text_labels: 0
+
+## wl_prebuffer.gds
+- top_cell: wl_prebuffer
+- bbox_dbu: [-2561195, 6300, 2496235, 421105]
+- size_um: 5057.43 x 414.805
+- layers: 10:metal2=12, 8:metal1=9
+- refs: INV_X4PC_T5_nmos x2
+- text_labels: 0
+
+## wl_sel.gds
+- top_cell: wl_sel
+- bbox_dbu: [90125, 399620, 1666140, 2956045]
+- size_um: 1576.015 x 2556.425
+- layers: 10:metal2=20, 8:metal1=17
+- refs: INV_X4PC_T5_nmos x4, nfet_W6u_L5 x1, M2_M1_CDNS_780405021280 x1
+- text_labels: 0

@@ -1,0 +1,50 @@
+VERSION 5.8 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+UNITS
+  DATABASE MICRONS 1000 ;
+END UNITS
+MACRO nfet_W24u_L5
+  CLASS BLOCK ;
+  ORIGIN 0 0 ;
+  FOREIGN nfet_W24u_L5 0 0 ;
+  SIZE 62.765 BY 144.085 ;
+  SYMMETRY X Y ;
+  PIN D
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 60.255 69.54 62.765 74.54 ;
+    END
+  END D
+  PIN G
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 28.88 141.575 33.88 144.085 ;
+    END
+  END G
+  PIN S
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 69.54 2.51 74.54 ;
+    END
+  END S
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met1 ;
+        RECT 28.88 0 33.88 2.51 ;
+    END
+  END VSS
+  OBS
+    LAYER met1 ;
+      RECT 0 0 62.765 144.085 ;
+  END
+END nfet_W24u_L5
+END LIBRARY

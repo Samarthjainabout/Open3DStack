@@ -1,0 +1,27 @@
+* Fast/typical/slow corner-style inverter comparison.
+VDD vdd 0 1.5
+VIN in 0 PULSE(0 1.5 1u 50n 50n 2u 4u)
+
+.model nch_slow nmos level=1 vto=0.65 kp=42u gamma=0.0 lambda=0.015 cgso=1p cgdo=1p
+.model nch_typ  nmos level=1 vto=0.55 kp=60u gamma=0.0 lambda=0.020 cgso=1p cgdo=1p
+.model nch_fast nmos level=1 vto=0.45 kp=78u gamma=0.0 lambda=0.030 cgso=1p cgdo=1p
+
+RPU_S vdd y_slow 32k
+M_S y_slow in 0 0 nch_slow W=24u L=5u M=1
+C_S y_slow 0 20f
+
+RPU_T vdd y_typ 24k
+M_T y_typ in 0 0 nch_typ W=24u L=5u M=1
+C_T y_typ 0 20f
+
+RPU_F vdd y_fast 18k
+M_F y_fast in 0 0 nch_fast W=24u L=5u M=1
+C_F y_fast 0 20f
+
+.tran 20n 12u
+.control
+run
+wrdata pdk/tft3d_platform/libs.tech/ngspice/examples/corners_inverter.dat v(in) v(y_slow) v(y_typ) v(y_fast)
+quit
+.endc
+.end

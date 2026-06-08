@@ -1,0 +1,40 @@
+# FreePDK45 Stream-In layer map
+# Format:
+# CadenceLayerName   Purpose   GDS_Layer   GDS_Datatype
+
+nwell       drawing   1    0
+pwell       drawing   2    0
+active      drawing   3    0
+poly        drawing   4    0
+nimplant    drawing   5    0
+pimplant    drawing   6    0
+contact     drawing   7    0
+
+metal1      drawing   8    0
+via1        drawing   9    0
+metal2      drawing   10   0
+via2        drawing   11   0
+metal3      drawing   12   0
+via3        drawing   13   0
+metal4      drawing   14   0
+via4        drawing   15   0
+metal5      drawing   16   0
+via5        drawing   17   0
+metal6      drawing   18   0
+via6        drawing   19   0
+metal7      drawing   20   0
+via7        drawing   21   0
+metal8      drawing   22   0
+via8        drawing   23   0
+metal9      drawing   24   0
+
+# Extra GDS layers from your Stream-In log
+via9        drawing   25   0
+metal10     drawing   26   0
+
+# FreePDK45 does not support via10/metal11 here,
+# so map GDS 27/28 onto existing high layers instead of dropping them.
+via9        drawing   27   0
+metal10     drawing   28   0
+
+text        drawing   29   0

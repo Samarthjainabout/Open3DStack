@@ -1,0 +1,91 @@
+* Process/local Monte Carlo-style inverter samples.
+VDD vdd 0 1.5
+VIN in 0 PULSE(0 1.5 1u 50n 50n 2u 4u)
+
+.model nch_mc00 nmos level=1 vto={agauss(0.55,0.05,3)} kp={agauss(60u,9u,3)} gamma=0.0 lambda={agauss(0.02,0.006,3)} cgso=1p cgdo=1p
+RPU_MC00 vdd y00 {agauss(24k,4k,3)}
+M_MC00 y00 in 0 0 nch_mc00 W={agauss(24u,1.2u,3)} L={agauss(5u,0.25u,3)} M=1
+C_MC00 y00 0 20f
+
+.model nch_mc01 nmos level=1 vto={agauss(0.55,0.05,3)} kp={agauss(60u,9u,3)} gamma=0.0 lambda={agauss(0.02,0.006,3)} cgso=1p cgdo=1p
+RPU_MC01 vdd y01 {agauss(24k,4k,3)}
+M_MC01 y01 in 0 0 nch_mc01 W={agauss(24u,1.2u,3)} L={agauss(5u,0.25u,3)} M=1
+C_MC01 y01 0 20f
+
+.model nch_mc02 nmos level=1 vto={agauss(0.55,0.05,3)} kp={agauss(60u,9u,3)} gamma=0.0 lambda={agauss(0.02,0.006,3)} cgso=1p cgdo=1p
+RPU_MC02 vdd y02 {agauss(24k,4k,3)}
+M_MC02 y02 in 0 0 nch_mc02 W={agauss(24u,1.2u,3)} L={agauss(5u,0.25u,3)} M=1
+C_MC02 y02 0 20f
+
+.model nch_mc03 nmos level=1 vto={agauss(0.55,0.05,3)} kp={agauss(60u,9u,3)} gamma=0.0 lambda={agauss(0.02,0.006,3)} cgso=1p cgdo=1p
+RPU_MC03 vdd y03 {agauss(24k,4k,3)}
+M_MC03 y03 in 0 0 nch_mc03 W={agauss(24u,1.2u,3)} L={agauss(5u,0.25u,3)} M=1
+C_MC03 y03 0 20f
+
+.model nch_mc04 nmos level=1 vto={agauss(0.55,0.05,3)} kp={agauss(60u,9u,3)} gamma=0.0 lambda={agauss(0.02,0.006,3)} cgso=1p cgdo=1p
+RPU_MC04 vdd y04 {agauss(24k,4k,3)}
+M_MC04 y04 in 0 0 nch_mc04 W={agauss(24u,1.2u,3)} L={agauss(5u,0.25u,3)} M=1
+C_MC04 y04 0 20f
+
+.model nch_mc05 nmos level=1 vto={agauss(0.55,0.05,3)} kp={agauss(60u,9u,3)} gamma=0.0 lambda={agauss(0.02,0.006,3)} cgso=1p cgdo=1p
+RPU_MC05 vdd y05 {agauss(24k,4k,3)}
+M_MC05 y05 in 0 0 nch_mc05 W={agauss(24u,1.2u,3)} L={agauss(5u,0.25u,3)} M=1
+C_MC05 y05 0 20f
+
+.model nch_mc06 nmos level=1 vto={agauss(0.55,0.05,3)} kp={agauss(60u,9u,3)} gamma=0.0 lambda={agauss(0.02,0.006,3)} cgso=1p cgdo=1p
+RPU_MC06 vdd y06 {agauss(24k,4k,3)}
+M_MC06 y06 in 0 0 nch_mc06 W={agauss(24u,1.2u,3)} L={agauss(5u,0.25u,3)} M=1
+C_MC06 y06 0 20f
+
+.model nch_mc07 nmos level=1 vto={agauss(0.55,0.05,3)} kp={agauss(60u,9u,3)} gamma=0.0 lambda={agauss(0.02,0.006,3)} cgso=1p cgdo=1p
+RPU_MC07 vdd y07 {agauss(24k,4k,3)}
+M_MC07 y07 in 0 0 nch_mc07 W={agauss(24u,1.2u,3)} L={agauss(5u,0.25u,3)} M=1
+C_MC07 y07 0 20f
+
+.model nch_mc08 nmos level=1 vto={agauss(0.55,0.05,3)} kp={agauss(60u,9u,3)} gamma=0.0 lambda={agauss(0.02,0.006,3)} cgso=1p cgdo=1p
+RPU_MC08 vdd y08 {agauss(24k,4k,3)}
+M_MC08 y08 in 0 0 nch_mc08 W={agauss(24u,1.2u,3)} L={agauss(5u,0.25u,3)} M=1
+C_MC08 y08 0 20f
+
+.model nch_mc09 nmos level=1 vto={agauss(0.55,0.05,3)} kp={agauss(60u,9u,3)} gamma=0.0 lambda={agauss(0.02,0.006,3)} cgso=1p cgdo=1p
+RPU_MC09 vdd y09 {agauss(24k,4k,3)}
+M_MC09 y09 in 0 0 nch_mc09 W={agauss(24u,1.2u,3)} L={agauss(5u,0.25u,3)} M=1
+C_MC09 y09 0 20f
+
+.model nch_mc10 nmos level=1 vto={agauss(0.55,0.05,3)} kp={agauss(60u,9u,3)} gamma=0.0 lambda={agauss(0.02,0.006,3)} cgso=1p cgdo=1p
+RPU_MC10 vdd y10 {agauss(24k,4k,3)}
+M_MC10 y10 in 0 0 nch_mc10 W={agauss(24u,1.2u,3)} L={agauss(5u,0.25u,3)} M=1
+C_MC10 y10 0 20f
+
+.model nch_mc11 nmos level=1 vto={agauss(0.55,0.05,3)} kp={agauss(60u,9u,3)} gamma=0.0 lambda={agauss(0.02,0.006,3)} cgso=1p cgdo=1p
+RPU_MC11 vdd y11 {agauss(24k,4k,3)}
+M_MC11 y11 in 0 0 nch_mc11 W={agauss(24u,1.2u,3)} L={agauss(5u,0.25u,3)} M=1
+C_MC11 y11 0 20f
+
+.model nch_mc12 nmos level=1 vto={agauss(0.55,0.05,3)} kp={agauss(60u,9u,3)} gamma=0.0 lambda={agauss(0.02,0.006,3)} cgso=1p cgdo=1p
+RPU_MC12 vdd y12 {agauss(24k,4k,3)}
+M_MC12 y12 in 0 0 nch_mc12 W={agauss(24u,1.2u,3)} L={agauss(5u,0.25u,3)} M=1
+C_MC12 y12 0 20f
+
+.model nch_mc13 nmos level=1 vto={agauss(0.55,0.05,3)} kp={agauss(60u,9u,3)} gamma=0.0 lambda={agauss(0.02,0.006,3)} cgso=1p cgdo=1p
+RPU_MC13 vdd y13 {agauss(24k,4k,3)}
+M_MC13 y13 in 0 0 nch_mc13 W={agauss(24u,1.2u,3)} L={agauss(5u,0.25u,3)} M=1
+C_MC13 y13 0 20f
+
+.model nch_mc14 nmos level=1 vto={agauss(0.55,0.05,3)} kp={agauss(60u,9u,3)} gamma=0.0 lambda={agauss(0.02,0.006,3)} cgso=1p cgdo=1p
+RPU_MC14 vdd y14 {agauss(24k,4k,3)}
+M_MC14 y14 in 0 0 nch_mc14 W={agauss(24u,1.2u,3)} L={agauss(5u,0.25u,3)} M=1
+C_MC14 y14 0 20f
+
+.model nch_mc15 nmos level=1 vto={agauss(0.55,0.05,3)} kp={agauss(60u,9u,3)} gamma=0.0 lambda={agauss(0.02,0.006,3)} cgso=1p cgdo=1p
+RPU_MC15 vdd y15 {agauss(24k,4k,3)}
+M_MC15 y15 in 0 0 nch_mc15 W={agauss(24u,1.2u,3)} L={agauss(5u,0.25u,3)} M=1
+C_MC15 y15 0 20f
+
+.tran 20n 12u
+.control
+run
+wrdata pdk/tft3d_platform/libs.tech/ngspice/examples/monte_carlo_inverter.dat v(in) v(y00) v(y01) v(y02) v(y03) v(y04) v(y05) v(y06) v(y07) v(y08) v(y09) v(y10) v(y11) v(y12) v(y13) v(y14) v(y15)
+quit
+.endc
+.end
