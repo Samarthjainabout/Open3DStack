@@ -36,39 +36,6 @@ the file. That is intentional and matches normal PDK/library organization.
 | `stack_sram_array_f4` | `gds/stack_sram_array_f4.gds`, `lef/stack_sram_array_f4.lef` | physical-only placeholder entries in `spice/3d_tft_macros.spice`, `lib/3d_tft_placeholders.lib`, `verilog/3d_tft_blackboxes.v`, and `sim/3d_tft_macro_functional.v` | Lower-middle bottom array flavour extracted from `Stack_SRAM_260605_F.gds`. |
 | `stack_sram_array_f5` | `gds/stack_sram_array_f5.gds`, `lef/stack_sram_array_f5.lef` | physical-only placeholder entries in `spice/3d_tft_macros.spice`, `lib/3d_tft_placeholders.lib`, `verilog/3d_tft_blackboxes.v`, and `sim/3d_tft_macro_functional.v` | Lower-right bottom array flavour extracted from `Stack_SRAM_260605_F.gds`. |
 
-## Netlist Organization
-
-Keep `spice/3d_tft_macros.spice` as the single macro SPICE/CDL-style library
-unless a downstream LVS or simulation tool specifically requires per-cell files.
-One combined file avoids include-order problems for hierarchical macros such as
-`wl_prebuffer`, which instantiates `INV_X4PC_T5_nmos`.
-
-If verified extracted netlists become available later, add them beside the
-placeholder file instead of replacing provenance:
-
-```text
-spice/
-  3d_tft_macros.spice          # current bring-up placeholder
-  3d_tft_macros_extracted.spice # extracted/verified SPICE, when available
-cdl/
-  3d_tft_macros.cdl            # LVS CDL, when available
-```
-
-Only split into `spice/cells/<cell>.spice` if a tool needs it. If you do split,
-keep a top-level `spice/3d_tft_macros.spice` wrapper that includes the cells in
-dependency order so OpenLane and simulation configs still point to one stable
-file.
-
-The same rule applies to Liberty and Verilog:
-
-- Keep Liberty as a library-level file, normally one file per PVT/corner, with
-  multiple `cell (...)` blocks inside.
-- Keep black-box Verilog and simple functional simulation models as library
-  files with one module per macro.
-- Add more Liberty files only when real timing corners exist, for example
-  `lib/typ_1p50v_25c.lib`, `lib/fast_1p65v_55c.lib`, and
-  `lib/slow_1p35v_m10c.lib`.
-
 ## GDS Layer Mapping
 
 The following stack map applies to every `stack_sram_array_f*` GDS file, ordered
@@ -107,25 +74,3 @@ GDS files are normalized into those layers:
 | `7/0`, `9/0`, `30/0`, `41/0` | `9/0` M1-M2 via open/connect |
 | `10/0`, `10/2`, `21/0` | `10/0` M2 source/drain conductor |
 | `3/0` | `3/0` channel active area |
-
-## Array-Level Layout
-
-The six `stack_sram_array_f*` macros are extracted from the bottom six array
-regions in `Stack_SRAM_260605_F.gds`. The source GDS is flattened into one
-`MainSymbol` cell, so the array names are repository-local flavour names ordered
-left-to-right, top-to-bottom across those six bottom regions.
-
-The Stack SRAM source layer map is retained at
-`openlane_import/source/tech/Stack_SRAM_260605_F.map.txt`. The extracted array
-GDS files use the stack map in the `GDS Layer Mapping` section above.
-
-Layer 40 contains drawn WL-number geometry. It is not GDS text and it does not
-provide named electrical pins. The array LEFs are therefore physical-only macro
-abstracts with full routing obstructions and no pins. Add real LEF pins,
-SPICE/CDL ports, Liberty pins, and Verilog ports after the array pin map is
-known or after pin-labeled extracted views are available.
-
-The original imported ZIPs, source-layout GDS files, and source LEF files are
-kept under `openlane_import/source/` at the repository root. Keep those source
-views separate from this library so the flow always uses the remapped platform
-views.
