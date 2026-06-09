@@ -71,7 +71,25 @@ The same rule applies to Liberty and Verilog:
 
 ## GDS Layer Mapping
 
-The macro GDS files use the following mask numbers when opened in KLayout:
+The following stack map applies to every `stack_sram_array_f*` GDS file, ordered
+from layer 1 to layer 2:
+
+| Stack level | Source layer | Final GDS layer/datatype | Meaning |
+| --- | --- | --- | --- |
+| Layer 1 FEFET | `L31` | `31/0` | FEFET gate, metal -2 |
+| Layer 1 FEFET | `L32` | `32/0` | FEFET channel |
+| Layer 1 FEFET | `L33` | `33/0` | FEFET source/drain, metal -1 |
+| Layer 1 FEFET | `L36` | `36/0` | FEFET M-1/M-2 via connect |
+| Layer 2 upper TFT | `L35` | `3/0` | Upper channel active area |
+| Layer 2 upper TFT | `L34` | `8/0` | Upper gate and M1 conductor |
+| Layer 2 upper TFT | `L36` | `9/0` | Upper M1-M2 via open/connect |
+| Layer 2 upper TFT | `L37` | `10/0` | Upper M2 source/drain conductor |
+| Annotation | `L40` | `40/0` | Drawn WL-number geometry |
+
+For stack SRAM arrays, `L36` appears in both layer contexts: layer 1 `L36`
+remains `36/0`, while layer 2 upper TFT `L36` maps to `9/0`.
+
+The common layer-2 TFT mask numbers are:
 
 | GDS layer/datatype | Meaning |
 | --- | --- |
@@ -79,15 +97,6 @@ The macro GDS files use the following mask numbers when opened in KLayout:
 | `8/0` | Gate and M1 conductor |
 | `9/0` | M1-M2 via open/connect |
 | `10/0` | M2 source/drain conductor |
-
-For imported upper TFT layer names, use this mapping:
-
-| Source layer | Normalized layer |
-| --- | --- |
-| `L34` | `8/0` gate and M1 conductor |
-| `L35` | `3/0` channel active area |
-| `L36` | `9/0` M1-M2 via open/connect |
-| `L37` | `10/0` M2 source/drain conductor |
 
 Imported or older aliases in the TFT primitive, inverter, and word-line macro
 GDS files are normalized into those layers:
@@ -98,22 +107,6 @@ GDS files are normalized into those layers:
 | `7/0`, `9/0`, `30/0`, `41/0` | `9/0` M1-M2 via open/connect |
 | `10/0`, `10/2`, `21/0` | `10/0` M2 source/drain conductor |
 | `3/0` | `3/0` channel active area |
-
-The following single stack map applies to every `stack_sram_array_f*` GDS file:
-
-| Stack SRAM source layer | Final GDS layer/datatype | Meaning |
-| --- | --- | --- |
-| `L31` | `31/0` | FEFET gate, metal -2 |
-| `L32` | `32/0` | FEFET channel |
-| `L33` | `33/0` | FEFET source/drain, metal -1 |
-| `L34` | `8/0` | Upper gate and M1 conductor |
-| `L35` | `3/0` | Upper channel active area |
-| `L36` | `36/0` | FEFET M-1/M-2 via connect |
-| `L37` | `10/0` | Upper M2 source/drain conductor |
-| `L40` | `40/0` | Drawn WL-number geometry |
-
-For stack SRAM arrays, `L36` is the first-layer FEFET M-1/M-2 via connect and
-therefore remains `36/0`; it is not the upper TFT `L36` via/open mapping.
 
 ## Array-Level Layout
 
