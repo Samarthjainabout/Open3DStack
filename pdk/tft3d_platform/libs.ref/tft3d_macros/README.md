@@ -69,6 +69,52 @@ The same rule applies to Liberty and Verilog:
   `lib/typ_1p50v_25c.lib`, `lib/fast_1p65v_55c.lib`, and
   `lib/slow_1p35v_m10c.lib`.
 
+## GDS Layer Mapping
+
+The macro GDS files use the following mask numbers when opened in KLayout:
+
+| GDS layer/datatype | Meaning |
+| --- | --- |
+| `3/0` | Channel active area |
+| `8/0` | Gate and M1 conductor |
+| `9/0` | M1-M2 via open/connect |
+| `10/0` | M2 source/drain conductor |
+
+For imported upper TFT layer names, use this mapping:
+
+| Source layer | Normalized layer |
+| --- | --- |
+| `L34` | `8/0` gate and M1 conductor |
+| `L35` | `3/0` channel active area |
+| `L36` | `9/0` M1-M2 via open/connect |
+| `L37` | `10/0` M2 source/drain conductor |
+
+Imported or older aliases in the TFT primitive, inverter, and word-line macro
+GDS files are normalized into those layers:
+
+| Source/old layer | Normalized layer |
+| --- | --- |
+| `4/0`, `8/0`, `8/2`, `11/0`, `20/0` | `8/0` gate and M1 conductor |
+| `7/0`, `9/0`, `30/0`, `41/0` | `9/0` M1-M2 via open/connect |
+| `10/0`, `10/2`, `21/0` | `10/0` M2 source/drain conductor |
+| `3/0` | `3/0` channel active area |
+
+The following single stack map applies to every `stack_sram_array_f*` GDS file:
+
+| Stack SRAM source layer | Final GDS layer/datatype | Meaning |
+| --- | --- | --- |
+| `L31` | `31/0` | FEFET gate, metal -2 |
+| `L32` | `32/0` | FEFET channel |
+| `L33` | `33/0` | FEFET source/drain, metal -1 |
+| `L34` | `8/0` | Upper gate and M1 conductor |
+| `L35` | `3/0` | Upper channel active area |
+| `L36` | `36/0` | FEFET M-1/M-2 via connect |
+| `L37` | `10/0` | Upper M2 source/drain conductor |
+| `L40` | `40/0` | Drawn WL-number geometry |
+
+For stack SRAM arrays, `L36` is the first-layer FEFET M-1/M-2 via connect and
+therefore remains `36/0`; it is not the upper TFT `L36` via/open mapping.
+
 ## Array-Level Layout
 
 The six `stack_sram_array_f*` macros are extracted from the bottom six array
@@ -78,18 +124,7 @@ left-to-right, top-to-bottom across those six bottom regions.
 
 The Stack SRAM source layer map is retained at
 `openlane_import/source/tech/Stack_SRAM_260605_F.map.txt`. The extracted array
-GDS files preserve these source layers:
-
-```text
-31 SRAM_BG
-32 SRAM_CH
-33 SRAM_SD
-34 SRAM_L2_BG
-35 SRAM_L2_CH
-36 SRAM_Hole
-37 SRAM_L2_SD
-40 WL Number
-```
+GDS files use the stack map in the `GDS Layer Mapping` section above.
 
 Layer 40 contains drawn WL-number geometry. It is not GDS text and it does not
 provide named electrical pins. The array LEFs are therefore physical-only macro
