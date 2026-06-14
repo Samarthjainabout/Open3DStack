@@ -1,0 +1,117 @@
+*  Generated for: HSPICE
+*  Generated on: Jun 15 00:46:15 2026
+*  Design library name: CAM_Circuits
+*  Design cell name: tb_write
+*  Design view name: schematic
+.include '/apps/PDK/NCSU/FreePDK/FreePDK45/1.4/ncsu_basekit/models/hspice/hspice_nom.include'
+*  Library name: CAM_Circuits
+*  Cell name: nfet_W24u_L5
+*  View name: schematic
+.subckt nfet_w24u_l5 d g s
++   l=5e-6 w=24e-6 m=1
+    m0 d g s s NMOS_VTG L=l W=w AD=2.52e-12 AS=2.52e-12 PD=24.21e-6 PS=24.21e-6 M=m
+.ends
+*  End of subcircuit definition.
+*  Library name: CAM_Circuits
+*  Cell name: nfet_W20p825_L5
+*  View name: schematic
+.subckt nfet_w20p825_l5 d g s
++   l=5e-6 w=20.825e-6 m=1
+    m0 d g s s NMOS_VTG L=l W=w AD=2.18663e-12 AS=2.18663e-12 PD=21.035e-6 PS=21.035e-6 M=m
+.ends
+*  End of subcircuit definition.
+*  Library name: CAM_Circuits
+*  Cell name: INV_X4PC_T5_nmos
+*  View name: schematic
+.subckt inv_x4pc_t5_nmos in out vdd vss
+    xi10 vdd vdd an nfet_w24u_l5 m=1 l=5e-6 w=24e-6 m=1
+    xi6 an in vss nfet_w20p825_l5 m=4 l=5e-6 w=20.825e-6 m=4
+    xi8 out in vss nfet_w20p825_l5 m=8 l=5e-6 w=20.825e-6 m=8
+    xi7 vdd an out nfet_w20p825_l5 m=8 l=5e-6 w=20.825e-6 m=8
+.ends
+*  End of subcircuit definition.
+*  Library name: CAM_Circuits
+*  Cell name: nfet_W6u_L5
+*  View name: schematic
+.subckt nfet_w6u_l5 d g s
+    m0 d g s s NMOS_VTG L=5e-6 W=6e-6 AD=630e-15 AS=630e-15 PD=6.21e-6 PS=6.21e-6 M=1
+.ends
+*  End of subcircuit definition.
+*  Library name: CAM_Circuits
+*  Cell name: NAND3_X4RL_T5
+*  View name: schematic
+.subckt nand3_x4rl_t5 a1 a2 a3 vdd vss y
+    xi33 y a1 net016 nfet_w24u_l5 m=1 l=5e-6 w=24e-6 m=1
+    xi42 net011 a3 vss nfet_w24u_l5 m=1 l=5e-6 w=24e-6 m=1
+    xi41 net016 a2 net011 nfet_w24u_l5 m=1 l=5e-6 w=24e-6 m=1
+    xi40 vdd vdd y nfet_w6u_l5
+.ends
+*  End of subcircuit definition.
+*  Library name: CAM_Circuits
+*  Cell name: wl_prebuffer
+*  View name: schematic
+.subckt wl_prebuffer vdd vss wl_en wl_in wl_mid
+    xi7 wl_in wl_mid vdd vss inv_x4pc_t5_nmos
+    xi8 wl_mid wl_en vdd vss inv_x4pc_t5_nmos
+.ends
+*  End of subcircuit definition.
+*  Library name: CAM_Circuits
+*  Cell name: write_driver
+*  View name: schematic
+.subckt write_driver bl blb col_sel din dinb nwr0 nwr1 sl slb vdd vdda vphb_bl vphb_sl vph_bl vph_sl vplb_bl vplb_sl vpl_bl vpl_sl vss vssa we wl_in wr0 wr1
+    xi27 din dinb vdd vss inv_x4pc_t5_nmos
+    xi30 nwr1 wr1 vdda vssa inv_x4pc_t5_nmos
+    xi31 nwr0 wr0 vdda vssa inv_x4pc_t5_nmos
+    xi28 din net014 net024 vdd vss nwr1 nand3_x4rl_t5
+    xi29 dinb net014 net024 vdd vss nwr0 nand3_x4rl_t5
+    xi33 bl wr0 vpl_bl nfet_w24u_l5 m=1 l=5e-6 w=24e-6 m=1
+    xi43 sl wr0 vpl_sl nfet_w24u_l5 m=1 l=5e-6 w=24e-6 m=1
+    xi42 vphb_sl wr0 slb nfet_w24u_l5 m=1 l=5e-6 w=24e-6 m=1
+    xi41 slb wr1 vplb_sl nfet_w24u_l5 m=1 l=5e-6 w=24e-6 m=1
+    xi40 vph_sl wr1 sl nfet_w24u_l5 m=1 l=5e-6 w=24e-6 m=1
+    xi32 vph_bl wr1 bl nfet_w24u_l5 m=1 l=5e-6 w=24e-6 m=1
+    xi34 vphb_bl wr0 blb nfet_w24u_l5 m=1 l=5e-6 w=24e-6 m=1
+    xi35 blb wr1 vplb_bl nfet_w24u_l5 m=1 l=5e-6 w=24e-6 m=1
+    xi38 vdd vss net024 col_sel net45 wl_prebuffer
+    xi39 vdd vss net014 we net44 wl_prebuffer
+    xi36 vdd vss din wl_in net46 wl_prebuffer
+.ends
+*  End of subcircuit definition.
+
+*  Library name: CAM_Circuits
+*  Cell name: tb_write
+*  View name: schematic
+xi18 bl blb col_sel din dinb nwr0 nwr1 sl slb net8 net06 net015 net07 net024 net014 0 0 0 0 0 0 we wl_in wr0 wr1 write_driver
+v20 net015 0 dc=3
+v19 net024 0 dc=3
+v9 net8 0 dc=1.5
+v18 net06 0 dc=2
+v7 net07 0 dc=2
+v6 net014 0 dc=2
+v15 col_sel 0 dc=1.2
+v16 we 0 dc=1.2
+v17 wl_in 0 PULSE ( 0 1.2 0 100e-9 100e-9 10e-6 20e-6 )
+r3 sl 0 r=20e3
+r2 slb 0 r=20e3
+r1 blb 0 r=20e3
+r0 bl 0 r=20e3
+.temp 27.0
+.option GEN_CUR_POL=ON
+.option ARTIST=2 PSF=2 WARN_SEP=1
+.option VECBUS=1 LIS_NEW=1 CONVERGE=100
+.tran 10e-9 40e-6 start=0.0
+.option hier_delim=1
+.probe tran v(bl)
++       v(blb)
++       v(col_sel)
++       v(din)
++       v(dinb)
++       v(nwr0)
++       v(nwr1)
++       v(sl)
++       v(slb)
++       v(we)
++       v(wl_in)
++       v(wr0)
++       v(wr1)
+.end
