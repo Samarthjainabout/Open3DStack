@@ -15,6 +15,13 @@ M0 D G S VSS nch W=24u L=5u M=1
 M0 D G S VSS nch W=6u L=5u M=1
 .ends nfet_W6u_L5
 
+.subckt NAND3_X4RL_T5 A1 A2 A3 VDD VSS Y
+XN0 net011 A3 VSS VSS nfet_W24u_L5
+XN1 net016 A2 net011 net011 nfet_W24u_L5
+XN2 Y A1 net016 net016 nfet_W24u_L5
+XPU VDD VDD Y Y nfet_W6u_L5
+.ends NAND3_X4RL_T5
+
 .subckt INV_X4PC_T5_nmos A Y VDD VSS
 RPU VDD Y 24k
 M0 Y A VSS VSS nch W=24u L=5u M=4
