@@ -1,0 +1,61 @@
+*  Generated for: HSPICE
+*  Generated on: Jun 15 15:54:09 2026
+*  Design library name: CAM_Circuits
+*  Design cell name: tb_analog_mux
+*  Design view name: schematic
+.include '/apps/PDK/NCSU/FreePDK/FreePDK45/1.4/ncsu_basekit/models/hspice/hspice_nom.include'
+*  Library name: CAM_Circuits
+*  Cell name: nfet_W24u_L5
+*  View name: schematic
+.subckt nfet_w24u_l5 d g s
++   l=5e-6 w=24e-6 m=1
+    m0 d g s s NMOS_VTG L=l W=w AD=2.52e-12 AS=2.52e-12 PD=24.21e-6 PS=24.21e-6 M=m
+.ends
+*  End of subcircuit definition.
+*  Library name: CAM_Circuits
+*  Cell name: nfet_W6u_L5
+*  View name: schematic
+.subckt nfet_w6u_l5 d g s
+    m0 d g s s NMOS_VTG L=5e-6 W=6e-6 AD=630e-15 AS=630e-15 PD=6.21e-6 PS=6.21e-6 M=1
+.ends
+*  End of subcircuit definition.
+*  Library name: CAM_Circuits
+*  Cell name: analog_mux_2to1_diff_nmos
+*  View name: schematic
+.subckt analog_mux_2to1_diff_nmos_schematic bl0 blb0 gbl gblb pre pre_b sel selb
+    xi11 blb0 sel gblb nfet_w24u_l5 m=1 l=5e-6 w=24e-6 m=1
+    xi15 bl0 sel gbl nfet_w6u_l5
+    xi13 pre_b selb gblb nfet_w6u_l5
+    xi12 pre selb gbl nfet_w6u_l5
+.ends
+*  End of subcircuit definition.
+
+*  Library name: CAM_Circuits
+*  Cell name: tb_analog_mux
+*  View name: schematic
+xi8 bl0 blb0 out_gbl out_gblb pre pre_b sel selb analog_mux_2to1_diff_nmos_schematic
+v0 bl0 0 dc=3
+v2 pre 0 dc=2
+v1 blb0 0 dc=-3
+v3 pre_b 0 dc=2
+v4 sel 0 PULSE ( -2 2 1e-6 100e-9 100e-9 10e-6 20e-6 )
+v5 selb 0 PULSE ( 2 -2 1e-6 100e-9 100e-9 10e-6 20e-6 )
+c1 out_gblb 0 c=1e-12
+c0 out_gbl 0 c=1e-12
+r1 out_gblb 0 r=20e3
+r0 out_gbl 0 r=20e3
+.temp 27.0
+.option GEN_CUR_POL=ON
+.option ARTIST=2 PSF=2 WARN_SEP=1
+.option VECBUS=1 LIS_NEW=1 CONVERGE=100
+.tran 10e-9 40e-6 start=0.0
+.option hier_delim=1
+.probe tran v(bl0)
++       v(blb0)
++       v(out_gbl)
++       v(out_gblb)
++       v(pre)
++       v(pre_b)
++       v(sel)
++       v(selb)
+.end
