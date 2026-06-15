@@ -21,11 +21,11 @@ MACRO_LIB = ROOT / "pdk/tft3d_platform/libs.ref/tft3d_macros"
 PAD_GDS = MACRO_LIB / "gds/wl_pad.gds"
 
 DIE_W = 25_000.0
-DIE_H = 15_000.0
+DIE_H = 22_000.0
 USER_X0 = 1_000.0
 USER_Y0 = 1_000.0
 USER_W = 23_000.0
-USER_H = 13_000.0
+USER_H = 20_000.0
 
 PAD_W = 100.0
 PAD_H = 130.0

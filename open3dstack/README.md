@@ -8,12 +8,12 @@ It intentionally excludes management SoC/RISC-V content and only places
 
 | Item | Value |
 | --- | --- |
-| Die size | 25000 um x 15000 um |
-| User wrapper area | 23000 um x 13000 um |
+| Die size | 25000 um x 22000 um |
+| User wrapper area | 23000 um x 20000 um |
 | User wrapper origin in frame | (1000 um, 1000 um) |
 | Pad primitive | `wl_pad`, 100 um x 130 um |
 | Pad pitch | 500 um |
-| Total pads | 156 |
+| Total pads | 184 |
 
 ## Files
 

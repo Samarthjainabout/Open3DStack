@@ -15,7 +15,7 @@ library (open3dstack_frame_placeholders) {
 
   cell (open3dstack_padframe) {
     dont_touch : true;
-    area : 375000000;
+    area : 550000000;
     pin (PAD_S00) { direction : inout; }
     pin (PAD_S01) { direction : inout; }
     pin (PAD_S02) { direction : inout; }
@@ -94,6 +94,20 @@ library (open3dstack_frame_placeholders) {
     pin (PAD_E26) { direction : inout; }
     pin (PAD_E27) { direction : inout; }
     pin (PAD_E28) { direction : inout; }
+    pin (PAD_E29) { direction : inout; }
+    pin (PAD_E30) { direction : inout; }
+    pin (PAD_E31) { direction : inout; }
+    pin (PAD_E32) { direction : inout; }
+    pin (PAD_E33) { direction : inout; }
+    pin (PAD_E34) { direction : inout; }
+    pin (PAD_E35) { direction : inout; }
+    pin (PAD_E36) { direction : inout; }
+    pin (PAD_E37) { direction : inout; }
+    pin (PAD_E38) { direction : inout; }
+    pin (PAD_E39) { direction : inout; }
+    pin (PAD_E40) { direction : inout; }
+    pin (PAD_E41) { direction : inout; }
+    pin (PAD_E42) { direction : inout; }
     pin (PAD_N00) { direction : inout; }
     pin (PAD_N01) { direction : inout; }
     pin (PAD_N02) { direction : inout; }
@@ -172,11 +186,25 @@ library (open3dstack_frame_placeholders) {
     pin (PAD_W26) { direction : inout; }
     pin (PAD_W27) { direction : inout; }
     pin (PAD_W28) { direction : inout; }
+    pin (PAD_W29) { direction : inout; }
+    pin (PAD_W30) { direction : inout; }
+    pin (PAD_W31) { direction : inout; }
+    pin (PAD_W32) { direction : inout; }
+    pin (PAD_W33) { direction : inout; }
+    pin (PAD_W34) { direction : inout; }
+    pin (PAD_W35) { direction : inout; }
+    pin (PAD_W36) { direction : inout; }
+    pin (PAD_W37) { direction : inout; }
+    pin (PAD_W38) { direction : inout; }
+    pin (PAD_W39) { direction : inout; }
+    pin (PAD_W40) { direction : inout; }
+    pin (PAD_W41) { direction : inout; }
+    pin (PAD_W42) { direction : inout; }
   }
 
   cell (open3dstack_user_project_wrapper) {
     dont_touch : true;
-    area : 299000000;
+    area : 460000000;
     pin (PAD_S00) { direction : inout; }
     pin (PAD_S01) { direction : inout; }
     pin (PAD_S02) { direction : inout; }
@@ -255,6 +283,20 @@ library (open3dstack_frame_placeholders) {
     pin (PAD_E26) { direction : inout; }
     pin (PAD_E27) { direction : inout; }
     pin (PAD_E28) { direction : inout; }
+    pin (PAD_E29) { direction : inout; }
+    pin (PAD_E30) { direction : inout; }
+    pin (PAD_E31) { direction : inout; }
+    pin (PAD_E32) { direction : inout; }
+    pin (PAD_E33) { direction : inout; }
+    pin (PAD_E34) { direction : inout; }
+    pin (PAD_E35) { direction : inout; }
+    pin (PAD_E36) { direction : inout; }
+    pin (PAD_E37) { direction : inout; }
+    pin (PAD_E38) { direction : inout; }
+    pin (PAD_E39) { direction : inout; }
+    pin (PAD_E40) { direction : inout; }
+    pin (PAD_E41) { direction : inout; }
+    pin (PAD_E42) { direction : inout; }
     pin (PAD_N00) { direction : inout; }
     pin (PAD_N01) { direction : inout; }
     pin (PAD_N02) { direction : inout; }
@@ -333,5 +375,19 @@ library (open3dstack_frame_placeholders) {
     pin (PAD_W26) { direction : inout; }
     pin (PAD_W27) { direction : inout; }
     pin (PAD_W28) { direction : inout; }
+    pin (PAD_W29) { direction : inout; }
+    pin (PAD_W30) { direction : inout; }
+    pin (PAD_W31) { direction : inout; }
+    pin (PAD_W32) { direction : inout; }
+    pin (PAD_W33) { direction : inout; }
+    pin (PAD_W34) { direction : inout; }
+    pin (PAD_W35) { direction : inout; }
+    pin (PAD_W36) { direction : inout; }
+    pin (PAD_W37) { direction : inout; }
+    pin (PAD_W38) { direction : inout; }
+    pin (PAD_W39) { direction : inout; }
+    pin (PAD_W40) { direction : inout; }
+    pin (PAD_W41) { direction : inout; }
+    pin (PAD_W42) { direction : inout; }
   }
 }

@@ -8,7 +8,7 @@ MACRO open3dstack_user_project_wrapper
   CLASS BLOCK ;
   ORIGIN 0 0 ;
   FOREIGN open3dstack_user_project_wrapper 0 0 ;
-  SIZE 23000 BY 13000 ;
+  SIZE 23000 BY 20000 ;
   SYMMETRY X Y ;
   PIN PAD_S00
     DIRECTION INOUT ;
@@ -407,7 +407,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 423.333 23000 443.333 ;
+        RECT 22980 444.545 23000 464.545 ;
     END
   END PAD_E00
   PIN PAD_E01
@@ -415,7 +415,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 856.667 23000 876.667 ;
+        RECT 22980 899.091 23000 919.091 ;
     END
   END PAD_E01
   PIN PAD_E02
@@ -423,7 +423,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 1290 23000 1310 ;
+        RECT 22980 1353.636 23000 1373.636 ;
     END
   END PAD_E02
   PIN PAD_E03
@@ -431,7 +431,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 1723.333 23000 1743.333 ;
+        RECT 22980 1808.182 23000 1828.182 ;
     END
   END PAD_E03
   PIN PAD_E04
@@ -439,7 +439,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 2156.667 23000 2176.667 ;
+        RECT 22980 2262.727 23000 2282.727 ;
     END
   END PAD_E04
   PIN PAD_E05
@@ -447,7 +447,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 2590 23000 2610 ;
+        RECT 22980 2717.273 23000 2737.273 ;
     END
   END PAD_E05
   PIN PAD_E06
@@ -455,7 +455,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 3023.333 23000 3043.333 ;
+        RECT 22980 3171.818 23000 3191.818 ;
     END
   END PAD_E06
   PIN PAD_E07
@@ -463,7 +463,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 3456.667 23000 3476.667 ;
+        RECT 22980 3626.364 23000 3646.364 ;
     END
   END PAD_E07
   PIN PAD_E08
@@ -471,7 +471,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 3890 23000 3910 ;
+        RECT 22980 4080.909 23000 4100.909 ;
     END
   END PAD_E08
   PIN PAD_E09
@@ -479,7 +479,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 4323.333 23000 4343.333 ;
+        RECT 22980 4535.455 23000 4555.455 ;
     END
   END PAD_E09
   PIN PAD_E10
@@ -487,7 +487,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 4756.667 23000 4776.667 ;
+        RECT 22980 4990 23000 5010 ;
     END
   END PAD_E10
   PIN PAD_E11
@@ -495,7 +495,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 5190 23000 5210 ;
+        RECT 22980 5444.545 23000 5464.545 ;
     END
   END PAD_E11
   PIN PAD_E12
@@ -503,7 +503,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 5623.333 23000 5643.333 ;
+        RECT 22980 5899.091 23000 5919.091 ;
     END
   END PAD_E12
   PIN PAD_E13
@@ -511,7 +511,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 6056.667 23000 6076.667 ;
+        RECT 22980 6353.636 23000 6373.636 ;
     END
   END PAD_E13
   PIN PAD_E14
@@ -519,7 +519,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 6490 23000 6510 ;
+        RECT 22980 6808.182 23000 6828.182 ;
     END
   END PAD_E14
   PIN PAD_E15
@@ -527,7 +527,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 6923.333 23000 6943.333 ;
+        RECT 22980 7262.727 23000 7282.727 ;
     END
   END PAD_E15
   PIN PAD_E16
@@ -535,7 +535,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 7356.667 23000 7376.667 ;
+        RECT 22980 7717.273 23000 7737.273 ;
     END
   END PAD_E16
   PIN PAD_E17
@@ -543,7 +543,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 7790 23000 7810 ;
+        RECT 22980 8171.818 23000 8191.818 ;
     END
   END PAD_E17
   PIN PAD_E18
@@ -551,7 +551,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 8223.333 23000 8243.333 ;
+        RECT 22980 8626.364 23000 8646.364 ;
     END
   END PAD_E18
   PIN PAD_E19
@@ -559,7 +559,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 8656.667 23000 8676.667 ;
+        RECT 22980 9080.909 23000 9100.909 ;
     END
   END PAD_E19
   PIN PAD_E20
@@ -567,7 +567,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 9090 23000 9110 ;
+        RECT 22980 9535.455 23000 9555.455 ;
     END
   END PAD_E20
   PIN PAD_E21
@@ -575,7 +575,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 9523.333 23000 9543.333 ;
+        RECT 22980 9990 23000 10010 ;
     END
   END PAD_E21
   PIN PAD_E22
@@ -583,7 +583,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 9956.667 23000 9976.667 ;
+        RECT 22980 10444.545 23000 10464.545 ;
     END
   END PAD_E22
   PIN PAD_E23
@@ -591,7 +591,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 10390 23000 10410 ;
+        RECT 22980 10899.091 23000 10919.091 ;
     END
   END PAD_E23
   PIN PAD_E24
@@ -599,7 +599,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 10823.333 23000 10843.333 ;
+        RECT 22980 11353.636 23000 11373.636 ;
     END
   END PAD_E24
   PIN PAD_E25
@@ -607,7 +607,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 11256.667 23000 11276.667 ;
+        RECT 22980 11808.182 23000 11828.182 ;
     END
   END PAD_E25
   PIN PAD_E26
@@ -615,7 +615,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 11690 23000 11710 ;
+        RECT 22980 12262.727 23000 12282.727 ;
     END
   END PAD_E26
   PIN PAD_E27
@@ -623,7 +623,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 12123.333 23000 12143.333 ;
+        RECT 22980 12717.273 23000 12737.273 ;
     END
   END PAD_E27
   PIN PAD_E28
@@ -631,15 +631,127 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22980 12556.667 23000 12576.667 ;
+        RECT 22980 13171.818 23000 13191.818 ;
     END
   END PAD_E28
+  PIN PAD_E29
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 22980 13626.364 23000 13646.364 ;
+    END
+  END PAD_E29
+  PIN PAD_E30
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 22980 14080.909 23000 14100.909 ;
+    END
+  END PAD_E30
+  PIN PAD_E31
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 22980 14535.455 23000 14555.455 ;
+    END
+  END PAD_E31
+  PIN PAD_E32
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 22980 14990 23000 15010 ;
+    END
+  END PAD_E32
+  PIN PAD_E33
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 22980 15444.545 23000 15464.545 ;
+    END
+  END PAD_E33
+  PIN PAD_E34
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 22980 15899.091 23000 15919.091 ;
+    END
+  END PAD_E34
+  PIN PAD_E35
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 22980 16353.636 23000 16373.636 ;
+    END
+  END PAD_E35
+  PIN PAD_E36
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 22980 16808.182 23000 16828.182 ;
+    END
+  END PAD_E36
+  PIN PAD_E37
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 22980 17262.727 23000 17282.727 ;
+    END
+  END PAD_E37
+  PIN PAD_E38
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 22980 17717.273 23000 17737.273 ;
+    END
+  END PAD_E38
+  PIN PAD_E39
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 22980 18171.818 23000 18191.818 ;
+    END
+  END PAD_E39
+  PIN PAD_E40
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 22980 18626.364 23000 18646.364 ;
+    END
+  END PAD_E40
+  PIN PAD_E41
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 22980 19080.909 23000 19100.909 ;
+    END
+  END PAD_E41
+  PIN PAD_E42
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 22980 19535.455 23000 19555.455 ;
+    END
+  END PAD_E42
   PIN PAD_N00
     DIRECTION INOUT ;
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 450 12980 470 13000 ;
+        RECT 450 19980 470 20000 ;
     END
   END PAD_N00
   PIN PAD_N01
@@ -647,7 +759,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 910 12980 930 13000 ;
+        RECT 910 19980 930 20000 ;
     END
   END PAD_N01
   PIN PAD_N02
@@ -655,7 +767,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 1370 12980 1390 13000 ;
+        RECT 1370 19980 1390 20000 ;
     END
   END PAD_N02
   PIN PAD_N03
@@ -663,7 +775,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 1830 12980 1850 13000 ;
+        RECT 1830 19980 1850 20000 ;
     END
   END PAD_N03
   PIN PAD_N04
@@ -671,7 +783,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 2290 12980 2310 13000 ;
+        RECT 2290 19980 2310 20000 ;
     END
   END PAD_N04
   PIN PAD_N05
@@ -679,7 +791,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 2750 12980 2770 13000 ;
+        RECT 2750 19980 2770 20000 ;
     END
   END PAD_N05
   PIN PAD_N06
@@ -687,7 +799,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 3210 12980 3230 13000 ;
+        RECT 3210 19980 3230 20000 ;
     END
   END PAD_N06
   PIN PAD_N07
@@ -695,7 +807,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 3670 12980 3690 13000 ;
+        RECT 3670 19980 3690 20000 ;
     END
   END PAD_N07
   PIN PAD_N08
@@ -703,7 +815,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 4130 12980 4150 13000 ;
+        RECT 4130 19980 4150 20000 ;
     END
   END PAD_N08
   PIN PAD_N09
@@ -711,7 +823,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 4590 12980 4610 13000 ;
+        RECT 4590 19980 4610 20000 ;
     END
   END PAD_N09
   PIN PAD_N10
@@ -719,7 +831,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 5050 12980 5070 13000 ;
+        RECT 5050 19980 5070 20000 ;
     END
   END PAD_N10
   PIN PAD_N11
@@ -727,7 +839,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 5510 12980 5530 13000 ;
+        RECT 5510 19980 5530 20000 ;
     END
   END PAD_N11
   PIN PAD_N12
@@ -735,7 +847,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 5970 12980 5990 13000 ;
+        RECT 5970 19980 5990 20000 ;
     END
   END PAD_N12
   PIN PAD_N13
@@ -743,7 +855,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 6430 12980 6450 13000 ;
+        RECT 6430 19980 6450 20000 ;
     END
   END PAD_N13
   PIN PAD_N14
@@ -751,7 +863,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 6890 12980 6910 13000 ;
+        RECT 6890 19980 6910 20000 ;
     END
   END PAD_N14
   PIN PAD_N15
@@ -759,7 +871,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 7350 12980 7370 13000 ;
+        RECT 7350 19980 7370 20000 ;
     END
   END PAD_N15
   PIN PAD_N16
@@ -767,7 +879,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 7810 12980 7830 13000 ;
+        RECT 7810 19980 7830 20000 ;
     END
   END PAD_N16
   PIN PAD_N17
@@ -775,7 +887,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 8270 12980 8290 13000 ;
+        RECT 8270 19980 8290 20000 ;
     END
   END PAD_N17
   PIN PAD_N18
@@ -783,7 +895,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 8730 12980 8750 13000 ;
+        RECT 8730 19980 8750 20000 ;
     END
   END PAD_N18
   PIN PAD_N19
@@ -791,7 +903,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 9190 12980 9210 13000 ;
+        RECT 9190 19980 9210 20000 ;
     END
   END PAD_N19
   PIN PAD_N20
@@ -799,7 +911,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 9650 12980 9670 13000 ;
+        RECT 9650 19980 9670 20000 ;
     END
   END PAD_N20
   PIN PAD_N21
@@ -807,7 +919,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 10110 12980 10130 13000 ;
+        RECT 10110 19980 10130 20000 ;
     END
   END PAD_N21
   PIN PAD_N22
@@ -815,7 +927,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 10570 12980 10590 13000 ;
+        RECT 10570 19980 10590 20000 ;
     END
   END PAD_N22
   PIN PAD_N23
@@ -823,7 +935,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 11030 12980 11050 13000 ;
+        RECT 11030 19980 11050 20000 ;
     END
   END PAD_N23
   PIN PAD_N24
@@ -831,7 +943,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 11490 12980 11510 13000 ;
+        RECT 11490 19980 11510 20000 ;
     END
   END PAD_N24
   PIN PAD_N25
@@ -839,7 +951,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 11950 12980 11970 13000 ;
+        RECT 11950 19980 11970 20000 ;
     END
   END PAD_N25
   PIN PAD_N26
@@ -847,7 +959,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 12410 12980 12430 13000 ;
+        RECT 12410 19980 12430 20000 ;
     END
   END PAD_N26
   PIN PAD_N27
@@ -855,7 +967,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 12870 12980 12890 13000 ;
+        RECT 12870 19980 12890 20000 ;
     END
   END PAD_N27
   PIN PAD_N28
@@ -863,7 +975,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 13330 12980 13350 13000 ;
+        RECT 13330 19980 13350 20000 ;
     END
   END PAD_N28
   PIN PAD_N29
@@ -871,7 +983,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 13790 12980 13810 13000 ;
+        RECT 13790 19980 13810 20000 ;
     END
   END PAD_N29
   PIN PAD_N30
@@ -879,7 +991,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 14250 12980 14270 13000 ;
+        RECT 14250 19980 14270 20000 ;
     END
   END PAD_N30
   PIN PAD_N31
@@ -887,7 +999,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 14710 12980 14730 13000 ;
+        RECT 14710 19980 14730 20000 ;
     END
   END PAD_N31
   PIN PAD_N32
@@ -895,7 +1007,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 15170 12980 15190 13000 ;
+        RECT 15170 19980 15190 20000 ;
     END
   END PAD_N32
   PIN PAD_N33
@@ -903,7 +1015,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 15630 12980 15650 13000 ;
+        RECT 15630 19980 15650 20000 ;
     END
   END PAD_N33
   PIN PAD_N34
@@ -911,7 +1023,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 16090 12980 16110 13000 ;
+        RECT 16090 19980 16110 20000 ;
     END
   END PAD_N34
   PIN PAD_N35
@@ -919,7 +1031,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 16550 12980 16570 13000 ;
+        RECT 16550 19980 16570 20000 ;
     END
   END PAD_N35
   PIN PAD_N36
@@ -927,7 +1039,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 17010 12980 17030 13000 ;
+        RECT 17010 19980 17030 20000 ;
     END
   END PAD_N36
   PIN PAD_N37
@@ -935,7 +1047,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 17470 12980 17490 13000 ;
+        RECT 17470 19980 17490 20000 ;
     END
   END PAD_N37
   PIN PAD_N38
@@ -943,7 +1055,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 17930 12980 17950 13000 ;
+        RECT 17930 19980 17950 20000 ;
     END
   END PAD_N38
   PIN PAD_N39
@@ -951,7 +1063,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 18390 12980 18410 13000 ;
+        RECT 18390 19980 18410 20000 ;
     END
   END PAD_N39
   PIN PAD_N40
@@ -959,7 +1071,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 18850 12980 18870 13000 ;
+        RECT 18850 19980 18870 20000 ;
     END
   END PAD_N40
   PIN PAD_N41
@@ -967,7 +1079,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 19310 12980 19330 13000 ;
+        RECT 19310 19980 19330 20000 ;
     END
   END PAD_N41
   PIN PAD_N42
@@ -975,7 +1087,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 19770 12980 19790 13000 ;
+        RECT 19770 19980 19790 20000 ;
     END
   END PAD_N42
   PIN PAD_N43
@@ -983,7 +1095,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 20230 12980 20250 13000 ;
+        RECT 20230 19980 20250 20000 ;
     END
   END PAD_N43
   PIN PAD_N44
@@ -991,7 +1103,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 20690 12980 20710 13000 ;
+        RECT 20690 19980 20710 20000 ;
     END
   END PAD_N44
   PIN PAD_N45
@@ -999,7 +1111,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 21150 12980 21170 13000 ;
+        RECT 21150 19980 21170 20000 ;
     END
   END PAD_N45
   PIN PAD_N46
@@ -1007,7 +1119,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 21610 12980 21630 13000 ;
+        RECT 21610 19980 21630 20000 ;
     END
   END PAD_N46
   PIN PAD_N47
@@ -1015,7 +1127,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22070 12980 22090 13000 ;
+        RECT 22070 19980 22090 20000 ;
     END
   END PAD_N47
   PIN PAD_N48
@@ -1023,7 +1135,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 22530 12980 22550 13000 ;
+        RECT 22530 19980 22550 20000 ;
     END
   END PAD_N48
   PIN PAD_W00
@@ -1031,7 +1143,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 423.333 20 443.333 ;
+        RECT 0 444.545 20 464.545 ;
     END
   END PAD_W00
   PIN PAD_W01
@@ -1039,7 +1151,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 856.667 20 876.667 ;
+        RECT 0 899.091 20 919.091 ;
     END
   END PAD_W01
   PIN PAD_W02
@@ -1047,7 +1159,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 1290 20 1310 ;
+        RECT 0 1353.636 20 1373.636 ;
     END
   END PAD_W02
   PIN PAD_W03
@@ -1055,7 +1167,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 1723.333 20 1743.333 ;
+        RECT 0 1808.182 20 1828.182 ;
     END
   END PAD_W03
   PIN PAD_W04
@@ -1063,7 +1175,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 2156.667 20 2176.667 ;
+        RECT 0 2262.727 20 2282.727 ;
     END
   END PAD_W04
   PIN PAD_W05
@@ -1071,7 +1183,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 2590 20 2610 ;
+        RECT 0 2717.273 20 2737.273 ;
     END
   END PAD_W05
   PIN PAD_W06
@@ -1079,7 +1191,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 3023.333 20 3043.333 ;
+        RECT 0 3171.818 20 3191.818 ;
     END
   END PAD_W06
   PIN PAD_W07
@@ -1087,7 +1199,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 3456.667 20 3476.667 ;
+        RECT 0 3626.364 20 3646.364 ;
     END
   END PAD_W07
   PIN PAD_W08
@@ -1095,7 +1207,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 3890 20 3910 ;
+        RECT 0 4080.909 20 4100.909 ;
     END
   END PAD_W08
   PIN PAD_W09
@@ -1103,7 +1215,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 4323.333 20 4343.333 ;
+        RECT 0 4535.455 20 4555.455 ;
     END
   END PAD_W09
   PIN PAD_W10
@@ -1111,7 +1223,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 4756.667 20 4776.667 ;
+        RECT 0 4990 20 5010 ;
     END
   END PAD_W10
   PIN PAD_W11
@@ -1119,7 +1231,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 5190 20 5210 ;
+        RECT 0 5444.545 20 5464.545 ;
     END
   END PAD_W11
   PIN PAD_W12
@@ -1127,7 +1239,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 5623.333 20 5643.333 ;
+        RECT 0 5899.091 20 5919.091 ;
     END
   END PAD_W12
   PIN PAD_W13
@@ -1135,7 +1247,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 6056.667 20 6076.667 ;
+        RECT 0 6353.636 20 6373.636 ;
     END
   END PAD_W13
   PIN PAD_W14
@@ -1143,7 +1255,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 6490 20 6510 ;
+        RECT 0 6808.182 20 6828.182 ;
     END
   END PAD_W14
   PIN PAD_W15
@@ -1151,7 +1263,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 6923.333 20 6943.333 ;
+        RECT 0 7262.727 20 7282.727 ;
     END
   END PAD_W15
   PIN PAD_W16
@@ -1159,7 +1271,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 7356.667 20 7376.667 ;
+        RECT 0 7717.273 20 7737.273 ;
     END
   END PAD_W16
   PIN PAD_W17
@@ -1167,7 +1279,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 7790 20 7810 ;
+        RECT 0 8171.818 20 8191.818 ;
     END
   END PAD_W17
   PIN PAD_W18
@@ -1175,7 +1287,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 8223.333 20 8243.333 ;
+        RECT 0 8626.364 20 8646.364 ;
     END
   END PAD_W18
   PIN PAD_W19
@@ -1183,7 +1295,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 8656.667 20 8676.667 ;
+        RECT 0 9080.909 20 9100.909 ;
     END
   END PAD_W19
   PIN PAD_W20
@@ -1191,7 +1303,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 9090 20 9110 ;
+        RECT 0 9535.455 20 9555.455 ;
     END
   END PAD_W20
   PIN PAD_W21
@@ -1199,7 +1311,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 9523.333 20 9543.333 ;
+        RECT 0 9990 20 10010 ;
     END
   END PAD_W21
   PIN PAD_W22
@@ -1207,7 +1319,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 9956.667 20 9976.667 ;
+        RECT 0 10444.545 20 10464.545 ;
     END
   END PAD_W22
   PIN PAD_W23
@@ -1215,7 +1327,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 10390 20 10410 ;
+        RECT 0 10899.091 20 10919.091 ;
     END
   END PAD_W23
   PIN PAD_W24
@@ -1223,7 +1335,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 10823.333 20 10843.333 ;
+        RECT 0 11353.636 20 11373.636 ;
     END
   END PAD_W24
   PIN PAD_W25
@@ -1231,7 +1343,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 11256.667 20 11276.667 ;
+        RECT 0 11808.182 20 11828.182 ;
     END
   END PAD_W25
   PIN PAD_W26
@@ -1239,7 +1351,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 11690 20 11710 ;
+        RECT 0 12262.727 20 12282.727 ;
     END
   END PAD_W26
   PIN PAD_W27
@@ -1247,7 +1359,7 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 12123.333 20 12143.333 ;
+        RECT 0 12717.273 20 12737.273 ;
     END
   END PAD_W27
   PIN PAD_W28
@@ -1255,8 +1367,120 @@ MACRO open3dstack_user_project_wrapper
     USE SIGNAL ;
     PORT
       LAYER SD ;
-        RECT 0 12556.667 20 12576.667 ;
+        RECT 0 13171.818 20 13191.818 ;
     END
   END PAD_W28
+  PIN PAD_W29
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 0 13626.364 20 13646.364 ;
+    END
+  END PAD_W29
+  PIN PAD_W30
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 0 14080.909 20 14100.909 ;
+    END
+  END PAD_W30
+  PIN PAD_W31
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 0 14535.455 20 14555.455 ;
+    END
+  END PAD_W31
+  PIN PAD_W32
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 0 14990 20 15010 ;
+    END
+  END PAD_W32
+  PIN PAD_W33
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 0 15444.545 20 15464.545 ;
+    END
+  END PAD_W33
+  PIN PAD_W34
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 0 15899.091 20 15919.091 ;
+    END
+  END PAD_W34
+  PIN PAD_W35
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 0 16353.636 20 16373.636 ;
+    END
+  END PAD_W35
+  PIN PAD_W36
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 0 16808.182 20 16828.182 ;
+    END
+  END PAD_W36
+  PIN PAD_W37
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 0 17262.727 20 17282.727 ;
+    END
+  END PAD_W37
+  PIN PAD_W38
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 0 17717.273 20 17737.273 ;
+    END
+  END PAD_W38
+  PIN PAD_W39
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 0 18171.818 20 18191.818 ;
+    END
+  END PAD_W39
+  PIN PAD_W40
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 0 18626.364 20 18646.364 ;
+    END
+  END PAD_W40
+  PIN PAD_W41
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 0 19080.909 20 19100.909 ;
+    END
+  END PAD_W41
+  PIN PAD_W42
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER SD ;
+        RECT 0 19535.455 20 19555.455 ;
+    END
+  END PAD_W42
 END open3dstack_user_project_wrapper
 END LIBRARY

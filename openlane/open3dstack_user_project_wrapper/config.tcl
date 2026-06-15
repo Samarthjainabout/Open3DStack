@@ -26,8 +26,8 @@ set ::env(CLOCK_PERIOD) 10
 set ::env(RUN_CTS) 0
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 23000 13000"
-set ::env(CORE_AREA) "100 100 22900 12900"
+set ::env(DIE_AREA) "0 0 23000 20000"
+set ::env(CORE_AREA) "100 100 22900 19900"
 set ::env(FP_PIN_ORDER_CFG) "$design_dir/pin_order.cfg"
 set ::env(PL_TARGET_DENSITY) 0.05
 
